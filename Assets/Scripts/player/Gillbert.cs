@@ -22,7 +22,7 @@ public class Gillbert : MonoBehaviour
 
         if (speedMod)
         {
-            transform.up = (Vector2) Vector3.Slerp(transform.up, playerMoveTrack, 2 * Time.deltaTime);
+            transform.up = (Vector2) Vector3.Slerp(transform.up, playerMoveTrack.normalized, 2 * Time.deltaTime);
             velocity += playerMoveTrack.magnitude * Time.deltaTime;
             velocity -= velocity * brakingForce * Time.deltaTime;
         }
