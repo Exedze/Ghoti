@@ -37,6 +37,7 @@ public class Gillbert : MonoBehaviour
 
     private void OnMove(InputValue value)
     {
+        if (!speedMod) return;
         playerMoveTrack = value.Get<Vector2>();
         if (sb1 > 0 && sb2 > 0) playerMoveTrack *= boostForce;
     }
