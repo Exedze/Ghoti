@@ -20020,11 +20020,6 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
---- !u!1 &433791674 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5436248584584352120, guid: 22733d1aa4dd30347b6e99b94a1f4acb, type: 3}
-  m_PrefabInstance: {fileID: 1833629614}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &890858776
 GameObject:
   m_ObjectHideFlags: 0
@@ -20958,7 +20953,7 @@ PrefabInstance:
     - target: {fileID: 5957922607262449185, guid: 07d832eb100bc6b41bdd6e6be0553f7d, type: 3}
       propertyPath: OnESCPressed.m_PersistentCalls.m_Calls.Array.data[5].m_Target
       value: 
-      objectReference: {fileID: 433791674}
+      objectReference: {fileID: 0}
     - target: {fileID: 5957922607262449185, guid: 07d832eb100bc6b41bdd6e6be0553f7d, type: 3}
       propertyPath: OnESCPressed.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
       value: SetActive
@@ -60721,7 +60716,7 @@ PrefabInstance:
     - target: {fileID: 3801800827675604804, guid: 22733d1aa4dd30347b6e99b94a1f4acb, type: 3}
       propertyPath: OnESCPressed.m_PersistentCalls.m_Calls.Array.data[5].m_Target
       value: 
-      objectReference: {fileID: 433791674}
+      objectReference: {fileID: 0}
     - target: {fileID: 3801800827675604804, guid: 22733d1aa4dd30347b6e99b94a1f4acb, type: 3}
       propertyPath: OnESCPressed.m_PersistentCalls.m_Calls.Array.data[5].m_CallState
       value: 2
@@ -60863,7 +60858,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5436248584584352120, guid: 22733d1aa4dd30347b6e99b94a1f4acb, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22733d1aa4dd30347b6e99b94a1f4acb, type: 3}
