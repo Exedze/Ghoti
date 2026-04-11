@@ -20931,6 +20931,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5957922607262449185, guid: 07d832eb100bc6b41bdd6e6be0553f7d, type: 3}
+      propertyPath: OnESCPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5957922607262449185, guid: 07d832eb100bc6b41bdd6e6be0553f7d, type: 3}
+      propertyPath: OnESCPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 120895378}
+    - target: {fileID: 5957922607262449185, guid: 07d832eb100bc6b41bdd6e6be0553f7d, type: 3}
+      propertyPath: OnESCPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 989279289}
+    - target: {fileID: 5957922607262449185, guid: 07d832eb100bc6b41bdd6e6be0553f7d, type: 3}
+      propertyPath: OnESCPressed.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1833629616}
+    - target: {fileID: 5957922607262449185, guid: 07d832eb100bc6b41bdd6e6be0553f7d, type: 3}
+      propertyPath: OnESCPressed.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1833629615}
+    - target: {fileID: 5957922607262449185, guid: 07d832eb100bc6b41bdd6e6be0553f7d, type: 3}
+      propertyPath: OnESCPressed.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 1544714136}
+    - target: {fileID: 5957922607262449185, guid: 07d832eb100bc6b41bdd6e6be0553f7d, type: 3}
+      propertyPath: OnESCPressed.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 433791674}
+    - target: {fileID: 5957922607262449185, guid: 07d832eb100bc6b41bdd6e6be0553f7d, type: 3}
+      propertyPath: OnESCPressed.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
     - target: {fileID: 6501063236979687356, guid: 07d832eb100bc6b41bdd6e6be0553f7d, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -60835,6 +60867,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22733d1aa4dd30347b6e99b94a1f4acb, type: 3}
+--- !u!1 &1833629615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4824196237744515020, guid: 22733d1aa4dd30347b6e99b94a1f4acb, type: 3}
+  m_PrefabInstance: {fileID: 1833629614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1833629616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5795341368326501940, guid: 22733d1aa4dd30347b6e99b94a1f4acb, type: 3}
+  m_PrefabInstance: {fileID: 1833629614}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1839432650
 PrefabInstance:
   m_ObjectHideFlags: 0

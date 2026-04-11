@@ -10,7 +10,7 @@ public class SceneLoaderExtra : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
             OnESCPressed.Invoke();
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetButtonDown("Horizantal"))
             OnJPressed.Invoke();
     }
 
