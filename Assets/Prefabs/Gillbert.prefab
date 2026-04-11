@@ -188,11 +188,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d7497779628714699744e5e47e2558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 40
   body: {fileID: 6501063236979687356}
-  brakingForce: 0.9
-  gravityStrength: 0.05
+  gravityStrength: 0.2
   boostForce: 2
+  leapForce: 0.5
 --- !u!114 &6150238232187737265
 MonoBehaviour:
   m_ObjectHideFlags: 0
