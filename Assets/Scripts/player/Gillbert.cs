@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -19,7 +20,8 @@ public class Gillbert : MonoBehaviour
     private Vector3 delta = Vector3.zero;
     [SerializeField] private float leapForce = 1;
     private Vector2 LeapVec=Vector2.zero;
-  
+    [HideInInspector] public List<GameObject> food = new List<GameObject>();
+
 
     // Update is called once per frame
     void Update()
@@ -82,6 +84,25 @@ delta = transform.position - prevcord;
     private void OnSprint1(InputValue value)
     {
         sb2 = value.Get<float>();
+        
+        
+    }
+
+    private void OnAttack()
+    {
+        if (food.Count == 0) return;
+        /*foreach (var i in food)
+        {
+            Destroy(i);
+        }*/
+
+        for (int i = 0; i < food.Count; i++)
+        {
+            Destroy(food[i]);
+        }
+
+        food = new List<GameObject>();
+        Debug.Log("ff");
     }
 
     public void enterWater()
