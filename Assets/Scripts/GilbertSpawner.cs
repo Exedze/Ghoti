@@ -3,7 +3,7 @@ using UnityEngine;
 public class GilbertSpawner : MonoBehaviour
 {
     public GameObject myGillbert;
-
+    public GameObject gillbertsparent;
     public void SpawnGilbert()
     {
         float spawnPointX = Random.Range(-10f, 10f);
@@ -16,6 +16,10 @@ public class GilbertSpawner : MonoBehaviour
             scaleX =new Vector3(-scaleX.x,scaleX.y,scaleX.z);
         }
         GameObject gill = Instantiate(myGillbert, spawnPosition, Quaternion.identity);
+       // gill.transform.parent=gillbertsparent;
+       gill.name = "Gillbert";
+       gill.transform.parent = gillbertsparent.transform;
      gill.transform.localScale=scaleX;
+     
     }
 }
