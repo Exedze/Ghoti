@@ -73201,6 +73201,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5350304938590226439, guid: b483e923122e2684184246e18ad33f16, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6598643658547591391, guid: b483e923122e2684184246e18ad33f16, type: 3}
       propertyPath: m_Name
       value: Foof (1)
@@ -73900,7 +73904,7 @@ PrefabInstance:
       value: 'Press Y + B + A (controller) or
 
         Space + AltGr (keyboard) to
-        destroy walls'
+        eat kelp walls'
       objectReference: {fileID: 0}
     - target: {fileID: 8957509629201959047, guid: 24c9401fd5c6161469a34848bfcadd0c, type: 3}
       propertyPath: m_fontSize
@@ -75320,11 +75324,13 @@ PrefabInstance:
       propertyPath: m_text
       value: 'You can toggle color-blind mode
 
-        in the settings'
+        in the settings
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 8957509629201959047, guid: 24c9401fd5c6161469a34848bfcadd0c, type: 3}
       propertyPath: m_fontSize
-      value: 39.3
+      value: 53.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
