@@ -21,6 +21,10 @@ public class Gillbert : MonoBehaviour
     [SerializeField] private float leapForce = 1;
     private Vector2 LeapVec=Vector2.zero;
     [HideInInspector] public List<GameObject> food = new List<GameObject>();
+    private Vector3 respawn=Vector3.zero;
+    [SerializeField] private float TimeToDrown = 10;
+    [SerializeField] private float FlopBreath = 2;
+    private float gurglegurgle = 0;
 
 
     // Update is called once per frame
@@ -36,9 +40,13 @@ delta = transform.position - prevcord;
         }
         else
         {
+            gurglegurgle += Time.deltaTime;
+            if(gurglegurgle>TimeToDrown)Respawn();
+            
             if (delta.magnitude < 0.02f&&body.linearVelocity.y==0&&LeapVec!=Vector2.zero)
             {
                 Debug.Log("once");
+                gurglegurgle -= FlopBreath;
            //add force to push player when they flop
            body.linearVelocity = new Vector2(LeapVec.x * leapForce * 3, 10 * leapForce);
            //body.AddForce(new Vector2(LeapVec.x*leapForce*3,10*leapForce));
@@ -47,7 +55,7 @@ delta = transform.position - prevcord;
         }
 
         
-        if (delta.magnitude > 0.02f)
+        if (delta.magnitude > 0.01f)
         {
             transform.up = Vector3.Slerp(transform.up, transform.position - prevcord, 0.9f);
         }
@@ -110,6 +118,8 @@ delta = transform.position - prevcord;
         speedMod = true;
         body.gravityScale = 0;
         playerMoveTrack=Vector2.down;
+        
+        gurglegurgle = 0;
       //  Debug.Log(body.linearVelocity);
       //  playerMoveTrack = transform.up;
       //  velocity *= 0.5f;
@@ -123,7 +133,14 @@ delta = transform.position - prevcord;
           //  Debug.Log("my people need me");
            // transform.up = (Vector2) Vector3.Slerp(transform.up, Vector2.left, 0.5f * Time.deltaTime);
         //}
+        respawn = transform.position;
      body.gravityScale = gravityStrength;
     }
-    
+
+    private void Respawn()
+    {
+        body.position = respawn + Vector3.down;
+        body.linearVelocity=Vector2.zero;
+        Debug.Log("he is contained");
+    }
 }
