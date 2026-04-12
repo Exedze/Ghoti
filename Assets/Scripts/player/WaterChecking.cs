@@ -9,7 +9,8 @@ public class WaterChecking : MonoBehaviour
     private int waters = 0;
     private void OnTriggerEnter2D(Collider2D col)
     {
-        gilbert.enterWater();
+        if(!gilbert.speedMod) gilbert.enterWater();
+        
         waters++;
         
     }

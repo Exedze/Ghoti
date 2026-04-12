@@ -9,7 +9,7 @@ public class Gillbert : MonoBehaviour
     private Vector2 playerMoveTrack = new Vector2();
     private float velocity=0;
     [SerializeField] private Rigidbody2D body;
-   private bool speedMod=true;
+   public bool speedMod=true;
     //[SerializeField] private float brakingForce = 0.2f;
     [SerializeField] private float gravityStrength=0.05f;
     [SerializeField] private float boostForce=2;
