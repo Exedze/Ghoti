@@ -26,6 +26,11 @@ public class Gillbert : MonoBehaviour
     [SerializeField] private float FlopBreath = 2;
     private float gurglegurgle = 0;
 
+    [SerializeField]
+    private AudioSource splash;
+    [SerializeField]
+    private AudioSource eat;
+
 
     // Update is called once per frame
     void Update()
@@ -103,7 +108,7 @@ delta = transform.position - prevcord;
         {
             Destroy(i);
         }*/
-
+        eat.Play();
         for (int i = 0; i < food.Count; i++)
         {
             Destroy(food[i]);
@@ -118,7 +123,7 @@ delta = transform.position - prevcord;
         speedMod = true;
         body.gravityScale = 0;
         playerMoveTrack=Vector2.down;
-        
+        splash.Play();
         gurglegurgle = 0;
       //  Debug.Log(body.linearVelocity);
       //  playerMoveTrack = transform.up;
@@ -133,6 +138,7 @@ delta = transform.position - prevcord;
           //  Debug.Log("my people need me");
            // transform.up = (Vector2) Vector3.Slerp(transform.up, Vector2.left, 0.5f * Time.deltaTime);
         //}
+        splash.Play();
         respawn = transform.position;
      body.gravityScale = gravityStrength;
     }
