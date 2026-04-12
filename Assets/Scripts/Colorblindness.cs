@@ -14,4 +14,9 @@ public class Colorblindness : MonoBehaviour
             Graphics.Blit(src,dest,mat);
         }
     }
+
+    public void Toggle()
+    {
+        @on = !@on;
+    }
 }

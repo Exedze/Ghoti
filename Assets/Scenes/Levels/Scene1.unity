@@ -33007,6 +33007,7 @@ GameObject:
   - component: {fileID: 1246509337}
   - component: {fileID: 1246509340}
   - component: {fileID: 1246509339}
+  - component: {fileID: 1246509341}
   m_Layer: 0
   m_Name: MILFish
   m_TagString: Untagged
@@ -33138,6 +33139,33 @@ MonoBehaviour:
   infoText: {fileID: 1381239921}
   spriteToShow: {fileID: 384672964}
   collEnd: {fileID: 1040057574}
+--- !u!114 &1246509341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246509336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6296ea277b966aa4b92e09f3f9cfefbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1833629617}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadWithLongDelay
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1249905492
 GameObject:
   m_ObjectHideFlags: 0
@@ -74032,7 +74060,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1425369282930489027, guid: 22733d1aa4dd30347b6e99b94a1f4acb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1425369282930489027, guid: 22733d1aa4dd30347b6e99b94a1f4acb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
@@ -74044,7 +74072,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1425369282930489027, guid: 22733d1aa4dd30347b6e99b94a1f4acb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: set_enabled
+      value: Toggle
       objectReference: {fileID: 0}
     - target: {fileID: 1425369282930489027, guid: 22733d1aa4dd30347b6e99b94a1f4acb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
@@ -74246,6 +74274,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5795341368326501940, guid: 22733d1aa4dd30347b6e99b94a1f4acb, type: 3}
   m_PrefabInstance: {fileID: 1833629614}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1833629617 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8265761749891232010, guid: 22733d1aa4dd30347b6e99b94a1f4acb, type: 3}
+  m_PrefabInstance: {fileID: 1833629614}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c2e4c32a9f2e364bad89148e8c58140, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1838730930
 GameObject:
   m_ObjectHideFlags: 0
